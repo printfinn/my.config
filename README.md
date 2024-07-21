@@ -36,6 +36,17 @@
     - Record: `qq` or `q<Any of 26 char>`, then ends with `q`
     - Playback macro: `@q` or `@<any or the 26 char`.
 1. Paste in INSERT mode: `(C)r"` to paste from yanked(default register); `(C)r+` `(C)r*` to paste from system clipboard.
-
-
+1. Erb:
+    - Insert mode:
+        - <%= %>: `<C-s>=`
+        - <% %>: `<C-s>-`
+        - <%# %>: `<C-s>#`
+    - Normal mode:
+        - <%= %>: `yss=`
+        - <% %>: `yss-`
+        - <%# %>: `yss#`
+    - Wrap a word:
+        - <%= word %>: `ysw=`
+    - Visual Mode:
+        - <%= visual selected %>: `S=`
 

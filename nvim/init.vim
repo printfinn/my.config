@@ -12,5 +12,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'lambdalisue/fern.vim'
 call plug#end()
 colorscheme onehalflight
