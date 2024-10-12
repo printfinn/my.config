@@ -6,6 +6,9 @@ set tabstop=2
 set shiftwidth=2
 set history=200
 set signcolumn=yes:1 " LSP shifts the screen when error occurs, this will fix it
+set relativenumber
+" Share Clipboard between OS and VIM
+set clipboard^=unnamed,unnamedplus
 
 call plug#begin()
 " Needed for neotree
@@ -37,4 +40,4 @@ let mapleader=" "
 " Shortcut to open NeoTree
 " map <leader>e :Neotree<CR>
 map <leader>e :Neotree toggle<CR>
-
+map <leader>f :Neoformat<CR>
